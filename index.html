@@ -1,0 +1,129 @@
+<!-- Gaya Tampilan (CSS) - Masukkan di paling atas postingan -->
+<style>
+  .soraflix-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .soraflix-player {
+    position: relative;
+    padding-bottom: 56.25%; /* Rasio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  .soraflix-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .soraflix-meta {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .soraflix-poster {
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+  }
+  .soraflix-poster img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .soraflix-info {
+    flex: 2;
+    min-width: 280px;
+  }
+  .soraflix-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #e50914; /* Warna merah khas streaming */
+  }
+  .soraflix-details {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #cccccc;
+  }
+  .soraflix-details span {
+    background: #333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  .soraflix-synopsis {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e5e5e5;
+  }
+  .soraflix-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .btn-download {
+    background-color: #e50914;
+    color: white !important;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+    display: inline-block;
+  }
+  .btn-download:hover {
+    background-color: #b81d24;
+  }
+</style>
+
+<!-- Struktur Konten (HTML) -->
+<div class="soraflix-container">
+
+  <!-- Pemutar Video (Ganti URL src dengan link video/embed Anda) -->
+  <div class="soraflix-player">
+    <iframe src="" allowfullscreen="true" frameborder="0"></iframe>
+  </div>
+
+  <!-- Tombol Aksi -->
+  <div class="soraflix-buttons">
+    <a class="btn-download" href="" target="_blank" rel="noopener">?? [LIVE] STREAMING </a>
+  </div>
+
+  <!-- Detail Informasi Film -->
+  <div class="soraflix-meta">
+    <!-- Gambar Poster -->
+    <div class="soraflix-poster">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToqsHQIlBsge2FAsasFlPz5F9JQzHBxDb6zIK5tQ2dw&s=10" alt="Poster Film" />
+    </div>
+    
+    <!-- Teks Info -->
+    <div class="soraflix-info">
+      <h2 class="soraflix-title"> Indonesia vs Bangladesh Grup A FIFA ASEAN Cup 2026</h2>
+      
+      <div class="soraflix-details">
+        <span>? 8.5</span>
+        <span>Football, Sci-Fi</span>
+        <span>LIVE</span>
+        <span>HD</span>
+      </div>
+      
+      <div class="soraflix-synopsis">
+        <p><strong>Sinopsis:</strong> Timnas Indonesia akan menghadapi Bangladesh pada laga penentu Grup A FIFA ASEAN Cup 2026 di Stadion Utama Gelora Bung Karno (SUGBK), Jakarta, pada Kamis, 1 Oktober 2026, pukul 19.30 WIB.Jadwal dan Lokasi PertandinganHari/Tanggal: Kamis, 1 Oktober 2026Waktu Kick-off: 19.30 WIBLokasi: Stadion Utama Gelora Bung Karno (SUGBK), JakartaSituasi Grup ATimnas Indonesia saat ini mengumpulkan 4 poin dari dua pertandingan (menang 2-0 atas Singapura dan imbang 0-0 dengan Malaysia).Posisi puncak sementara dikuasai Malaysia dengan poin yang sama (4 poin) namun unggul selisih gol.Bangladesh sudah dipastikan tersingkir dari turnamen setelah menelan dua kekalahan beruntun (0-3 dari Malaysia dan 0-1 dari Singapura).Laga melawan Bangladesh ini menjadi penentu bagi Skuad Garuda untuk lolos ke final. Indonesia tidak hanya butuh kemenangan, tetapi juga perlu mencetak gol sebanyak-banyaknya guna mengejar selisih gol dari Malaysia.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
